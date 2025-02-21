@@ -1,8 +1,8 @@
-<<<<<<< HEAD
+
 # models/message.py
 from sqlalchemy import Column, Integer, String, DateTime, ForeignKey
 from sqlalchemy.orm import relationship
-from . import Base
+from .base import Base
 
 class Message(Base):
     __tablename__ = 'messages'
@@ -27,7 +27,7 @@ class Message(Base):
 
 
 
-=======
+
 # models/message.py
 from sqlalchemy import Column, Integer, String, DateTime, ForeignKey
 from sqlalchemy.orm import relationship
