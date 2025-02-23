@@ -1,3 +1,5 @@
+# 初始化 models 模块
+
 from flask import Blueprint
 
 api_v1 = Blueprint('api_v1', __name__)
@@ -10,3 +12,4 @@ from . import (
     DutyRecord, DutyApply, Clean,
     Arrange, PubliityLink, Messages
 )
+
