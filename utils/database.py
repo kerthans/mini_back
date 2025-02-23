@@ -308,15 +308,5 @@ def delete_stuff_borrow(db: Session, sb_id: str) -> bool:
     db.delete(db_stuff_borrow)
     db.commit()
     return True
-from dotenv import load_dotenv
-import os
 
-# 加载 .env 文件
-load_dotenv()
 
-# 检查 DATABASE_URL 是否加载成功
-SQLALCHEMY_DATABASE_URL = os.getenv("DATABASE_URL")
-if SQLALCHEMY_DATABASE_URL is None:
-    raise ValueError("❌ 未找到 DATABASE_URL，请检查 .env 文件！")
-else:
-    print("✅ DATABASE_URL 加载成功：", SQLALCHEMY_DATABASE_URL)
